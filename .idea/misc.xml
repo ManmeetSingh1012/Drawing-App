@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22837837837837838" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/color_choose.xml" value="0.536" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/color_chossed.xml" value="0.176" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/color_platestyle.xml" value="0.11891891891891893" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/color_sty.xml" value="0.176" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/extra_large_brush.xml" value="0.1648148148148148" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22837837837837838" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/large_brush.xml" value="0.2640625" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/medium_brush.xml" value="0.2640625" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/small_brush.xml" value="0.2640625" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/very_small_brush.xml" value="0.1375" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/drawable/view.xml" value="0.4" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/layout/activity_main.xml" value="0.35233160621761656" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/layout/buttons_brushsize.xml" value="0.176" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/layout/progressbar.xml" value="0.16296296296296298" />
+        <entry key="..\:/Android project/DrawingApp/app/src/main/res/xml/paths.xml" value="0.16296296296296298" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

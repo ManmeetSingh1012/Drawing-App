@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <!--Frame layout is used put muliple layer top of each other -->
+    <!-- fit xy will fit the image in given dimensions and scale type will cut the photo and display it accordingly-->
+    <FrameLayout
+        android:id="@+id/contaner_for_diff_layer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/color_plate"
+        android:background="@drawable/view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/back_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerCrop"
+            ></ImageView>
+        <com.example.drawingapp.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+
+            ></com.example.drawingapp.DrawingView>
+
+    </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/color_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/color_plate2"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contaner_for_diff_layer">
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/brown"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/brown"></ImageButton>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/Red"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/Red"></ImageButton>
+
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/yellow"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/yellow"></ImageButton>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/pink"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/pink"></ImageButton>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/black"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/black"></ImageButton>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/purple_700"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/purple_700"></ImageButton>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="2dp"
+            android:background="@color/teal_200"
+            android:onClick="color_chosed"
+            android:src="@drawable/color_sty"
+            android:tag="@color/teal_200"></ImageButton>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/color_plate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/color_plate">
+
+        <ImageButton
+            android:id="@+id/photo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:background="@drawable/im2"
+            android:paddingHorizontal="5dp"
+            android:layout_marginHorizontal="10dp"
+
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/brush"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:background="@drawable/br"
+            android:paddingHorizontal="5dp"
+            android:layout_marginHorizontal="10dp"
+
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/undo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:background="@drawable/undo"
+            android:paddingHorizontal="5dp"
+            android:layout_marginHorizontal="10dp"
+
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/Save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:background="@drawable/fileicn"
+            android:scaleType="fitXY"
+            android:layout_marginHorizontal="10dp"
+
+
+            ></ImageButton>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
